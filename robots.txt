@@ -10,5 +10,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: www.hellosirui.com/sitemap.xml
-# Sitemap: www.hellosirui.com/baidusitemap.xml
+Sitemap: https://www.hellosirui.com/sitemap.xml
+Sitemap: https://www.hellosirui.com/baidusitemap.xml
