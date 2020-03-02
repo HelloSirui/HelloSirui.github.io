@@ -2,9 +2,9 @@
 <html>
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-  <title>probability | Wecome to Sirui&#39;s blog</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="probability | Wecome to Sirui&#39;s blog">
+  <title>量子力学第一次作业 | Wecome to Sirui&#39;s blog</title>
+  <meta name="keywords" content=" quantum ">
+  <meta name="description" content="量子力学第一次作业 | Wecome to Sirui&#39;s blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="BNU physics">
 <meta property="og:type" content="website">
@@ -354,19 +354,31 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-probability" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-qm_hw1" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">probability</h1>
+        <h1 class="article-title">量子力学第一次作业</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            
+                <a  data-rel="Homework">Homework</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color3">quantum</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-20 00:30:04'>2020-01-27 15:43</time>
+        创建时间:<time class="date" title='更新时间: 2020-03-02 19:27:09'>2020-01-28 10:32</time>
         
     </div>
     <div class="article-meta">
@@ -388,7 +400,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#概率论和数理统计"><span class="toc-text">概率论和数理统计</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#量子力学第一次作业"><span class="toc-text">量子力学第一次作业</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -404,8 +416,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="概率论和数理统计"><a href="#概率论和数理统计" class="headerlink" title="概率论和数理统计"></a>概率论和数理统计</h1><center>帅思睿 (siruishuai@gmail.com</siruishuai@gmail.com>)</center>
+        <h1 id="量子力学第一次作业"><a href="#量子力学第一次作业" class="headerlink" title="量子力学第一次作业"></a>量子力学第一次作业</h1><center>帅思睿 (201711940148</201711940148@mail.bnu.edu.com>)</center>
 <center>Physics Department, Beijing Normal University</center>
+
+<hr>
+<blockquote>
+<p>推导公式(2.14), (2.15)，即</p>
+<script type="math/tex; mode=display">
+\vec{j}=- \frac{i \hbar}{2 \mu}\left(\Psi^{*} \vec{\nabla} \Psi-\Psi \vec{\nabla} \Psi^{*} \right)-\frac{q}{\mu c} \vec{A} \rho</script><script type="math/tex; mode=display">
+\frac{\partial \rho}{\partial t}+\vec{\nabla} \cdot \vec{j}=0</script></blockquote>
+<p>解：根据 $\vec{j}$ 的定义，可知：</p>
+<script type="math/tex; mode=display">
+\vec{j}=\frac{1}{2 \mu}(\Psi^* \vec{\pi} \Psi+\Psi \vec{\pi}^{*} \Psi^*)</script><p>其中，$\vec{\pi}$ 为机械动量，有$\vec{\pi}=\vec{p}-\frac{q}{c} \vec{A}$，代入上式可得：</p>
+<script type="math/tex; mode=display">
+\vec{j}=\frac{1}{2 \mu}[\Psi^* (\vec{p}-\frac{q}{c} \vec{A}) \Psi+\Psi(\vec{p}-\frac{q}{c} \vec{A})^{*} \Psi^*]\\=\frac{1}{2 \mu}(\Psi^* \vec{p} \Psi+\Psi \vec{p}^{*} \Psi^*)-\frac{q}{2 \mu c}(\Psi^* \vec{A} \Psi+\Psi \vec{A}^{*} \Psi^*)\\=-\frac{i \hbar}{2 \mu} (\Psi^* \vec{\nabla} \Psi-\Psi \vec{\nabla} \Psi^*)-\frac{q}{2 \mu c}(\Psi^* \vec{A} \Psi+\Psi \vec{A} \Psi^*)\\</script><p>由于算符 $\vec{A}=\vec{A}(x,t)$,<br>有 </p>
+<script type="math/tex; mode=display">
+\Psi^* \vec{A} \Psi=\vec{A} \Psi^* \Psi= \Psi \vec{A} \Psi^*</script><p>代入上式，得：</p>
+<script type="math/tex; mode=display">
+\vec{j}=-\frac{i \hbar}{2 \mu} (\Psi^* \vec{\nabla} \Psi-\Psi \vec{\nabla} \Psi^*)-\frac{q}{\mu c}\vec{A} \rho</script><p>其中，$\rho=\Psi^* \Psi$，得证</p>
+<p>接下来，证明几率流的守恒公式</p>
+<script type="math/tex; mode=display">
+左边=\frac{\partial \rho}{\partial t}\\= \frac{\partial (\Psi^* \Psi)}{\partial t} \\= \frac{\partial \Psi^*}{\partial t} \Psi+ \Psi^* \frac{\partial \Psi}{\partial t}</script><p>由带电粒子在电磁场中的 Schrodinger 方程</p>
+<p>同时取库仑规范，即 $[\vec{p},\vec{A}]=\vec{p} \cdot \vec{A}=-i \hbar \vec{\nabla} \cdot \vec{A}=0$，两者对易</p>
+<p>得：</p>
+<script type="math/tex; mode=display">
+i \hbar \frac{\partial}{\partial t} \Psi=\left[ \frac{1}{2\mu}(\vec{p}-\frac{q}{c} \vec{A})^{2} +q \phi\right] \Psi\\
+=\left[ \frac{1}{2 \mu} \left(p^2+\frac{q^2 A^2}{c^2}-\frac{q}{c}(\vec{p} \cdot \vec{A}+\vec{A} \cdot \vec{p}) \right)+q \phi\right] \Psi\\
+=\left[ \frac{1}{2 \mu}(p^2+\frac{q^2 A^2}{c^2}-\frac{2 q}{c} \vec{A} \cdot \vec{P})+q \phi\right] \Psi\\
+=\left[ \frac{1}{2 \mu}(- \hbar^2 \nabla^2+\frac{q^2 A^2}{c^2}+\frac{2 i \hbar q}{c} \vec{A} \cdot \vec{\nabla})+q \phi\right] \Psi\\</script><p>对上式两边同时取复共轭，得：</p>
+<script type="math/tex; mode=display">
+-i \hbar \frac{\partial}{\partial t} \Psi^*=\left[ \frac{1}{2 \mu}(- \hbar^2 \nabla^2+\frac{q^2 A^2}{c^2}-\frac{2 i \hbar q}{c} \vec{A} \cdot \vec{\nabla})+q \phi\right] \Psi^*\\</script><p>$\Psi^* \cdot (8)- (9) \cdot \Psi $，得：</p>
+<script type="math/tex; mode=display">
+i \hbar\left( \Psi^* \cdot \frac{\partial \Psi}{\partial t}+\frac{\partial \Psi^*}{\partial t} \cdot \Psi \right)=-\frac{\hbar^{2}}{2 \mu}\left(\Psi^{*} \nabla^{2} \Psi-\Psi \nabla^{2} \Psi^{*}\right)+\frac{i \hbar q}{\mu c}\left(\Psi^{*} \vec{A} \cdot \nabla \Psi+\Psi \vec{A} \cdot \nabla \Psi^{*}\right)</script><p>化简，即：</p>
+<script type="math/tex; mode=display">
+\frac{\partial \rho}{\partial t}=\frac{i \hbar}{2 \mu}\left(\Psi^{*} \nabla^{2} \Psi-\Psi \nabla^{2} \Psi^{*}\right)+\frac{q}{\mu c}\left(\Psi^{*} \vec{A} \cdot \nabla \Psi+\Psi \vec{A} \cdot \nabla \Psi^{*}\right)\\=\frac{i \hbar}{2 \mu} \left( \vec{\nabla} \cdot\left(\Psi^{*} \vec{\nabla} \Psi\right)-\vec{\nabla} \Psi^{*} \cdot \vec{\nabla} \Psi-\left(\vec{\nabla} \cdot \left(\Psi \vec{\nabla} \Psi^{*} \right)-\vec{\nabla} \Psi \cdot \vec{\nabla} \Psi^{*}\right) \right)+\frac{q}{\mu c}\left(\Psi^{*} \vec{A} \cdot \nabla \Psi+\Psi \vec{A} \cdot \nabla \Psi^{*}\right)\\=\frac{i \hbar}{2 \mu} \left( \vec{\nabla} \cdot\left(\Psi^{*} \vec{\nabla} \Psi\right) -\vec{\nabla} \cdot \left(\Psi \vec{\nabla} \Psi^{*} \right) \right)+\frac{q}{\mu c}\left(\Psi^{*} \vec{A} \cdot \nabla \Psi+\Psi \vec{A} \cdot \nabla \Psi^{*}\right)\\</script><p>又因为</p>
+<script type="math/tex; mode=display">
+\vec{\nabla} \cdot\left(\Psi^{*} \vec{\nabla} \Psi\right) -\vec{\nabla} \cdot \left(\Psi \vec{\nabla} \Psi^{*} \right)=\vec{\nabla} \cdot \left(\Psi^{*} \vec{\nabla} \Psi- \Psi \vec{\nabla} \Psi^{*}\right)</script><p>同时</p>
+<script type="math/tex; mode=display">
+\Psi^{*} \vec{A} \cdot \nabla \Psi+\Psi \vec{A} \cdot \nabla \Psi^{*}=\vec{A} \cdot \left( \Psi^* \vec{\nabla} \Psi+\Psi \vec{\nabla} \Psi^*\right)\\=\vec{A} \cdot \vec{\nabla} \rho\\=\vec{\nabla} \cdot (\vec{A} \rho)</script><p>其中，最后一步用到了库仑规范给出的 $\vec{\nabla} \cdot \vec{A}=0$</p>
+<p>故而</p>
+<script type="math/tex; mode=display">
+左边=\frac{\partial \rho}{\partial t}\\=\frac{i \hbar}{2 \mu} \left( \vec{\nabla} \cdot\left(\Psi^{*} \vec{\nabla} \Psi\right) -\vec{\nabla} \cdot \left(\Psi \vec{\nabla} \Psi^{*} \right) \right)+\frac{q}{\mu c}\left(\Psi^{*} \vec{A} \cdot \nabla \Psi+\Psi \vec{A} \cdot \nabla \Psi^{*}\right)\\=\frac{i \hbar}{2 \mu} \vec{\nabla} \cdot \left(\Psi^{*} \vec{\nabla} \Psi- \Psi \vec{\nabla} \Psi^{*}\right)+\vec{\nabla} \cdot (\frac{q}{\mu c} \vec{A} \rho)\\=- \vec{\nabla} \cdot \vec{j}=右边</script><p>证毕</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 siruishuai@gmail.com </span>
@@ -419,12 +470,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>probability</p>
+    <p><span class="copy-title">文章标题:</span>量子力学第一次作业</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="Sirui Shuai">Sirui Shuai</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-01-27, 15:43:00</p>
-    <p><span class="copy-title">最后更新:</span>2020-01-20, 00:30:04</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/27/probability/" title="probability">www.hellosirui.com/2020/01/27/probability/</a>
+    <p><span class="copy-title">发布时间:</span>2020-01-28, 10:32:04</p>
+    <p><span class="copy-title">最后更新:</span>2020-03-02, 19:27:09</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/28/qm_hw1/" title="量子力学第一次作业">www.hellosirui.com/2020/01/28/qm_hw1/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
@@ -434,6 +485,46 @@
 
 
 
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<input type="hidden" id="MathJax-js"
+        value="//cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</input>
     
 
 
