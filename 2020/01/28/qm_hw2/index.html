@@ -2,9 +2,9 @@
 <html>
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-  <title>更新日志 | Wecome to Sirui&#39;s blog</title>
-  <meta name="keywords" content=" blog ">
-  <meta name="description" content="更新日志 | Wecome to Sirui&#39;s blog">
+  <title>量子力学第二次作业 | Wecome to Sirui&#39;s blog</title>
+  <meta name="keywords" content=" quantum ">
+  <meta name="description" content="量子力学第二次作业 | Wecome to Sirui&#39;s blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="BNU physics">
 <meta property="og:type" content="website">
@@ -362,9 +362,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-text" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-qm_hw2" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">更新日志</h1>
+        <h1 class="article-title">量子力学第二次作业</h1>
     
     <div class="article-meta">
         
@@ -372,21 +372,21 @@
         
         <span class="book">
             
-                <a  data-rel="Log">Log</a>
+                <a  data-rel="Homework">Homework</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color5">blog</a>
+            <a class="color3">quantum</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-29 09:36:51'>2020-01-28 10:32</time>
+        创建时间:<time class="date" title='更新时间: 2020-03-06 10:44:03'>2020-01-28 10:32</time>
         
     </div>
     <div class="article-meta">
@@ -408,7 +408,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2020年1月"><span class="toc-text">2020年1月</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#量子力学第二次作业"><span class="toc-text">量子力学第二次作业</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -424,12 +424,70 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="2020年1月"><a href="#2020年1月" class="headerlink" title="2020年1月"></a>2020年1月</h2><ol>
-<li><p>添加蜘蛛协议 robots.txt</p>
-<p>参考 <a href="https://segmentfault.com/a/1190000017986794" target="_blank" rel="noopener">https://segmentfault.com/a/1190000017986794</a></p>
-</li>
-<li></li>
+        <h1 id="量子力学第二次作业"><a href="#量子力学第二次作业" class="headerlink" title="量子力学第二次作业"></a>量子力学第二次作业</h1><center>帅思睿 (201711940148</201711940148@mail.bnu.edu.com>)</center>
+<center>Physics Department, Beijing Normal University</center>
+
+<hr>
+<blockquote>
+<ol>
+<li>推导讲义中对易式</li>
 </ol>
+<script type="math/tex; mode=display">
+\left[\Pi_{i}, \Pi_{j}\right]=\frac{i \hbar q}{c} \epsilon_{i j k} B_{k}</script></blockquote>
+<p>解：根据机械动量 $\vec{\Pi}$ 的定义，可知：</p>
+<script type="math/tex; mode=display">
+左边=\left[\Pi_{i}, \Pi_{j}\right]\\
+=\left[ P_{i}-\frac{q}{c} A_{i}, P_{j}-\frac{q}{c} A_{j} \right]\\
+=\left[ P_{i},P_{j} \right]+\frac{q^2}{c^2}\left[A_i,A_j \right]-\frac{q}{c}\left[A_{i},P_{j} \right]-\frac{q}{c}\left[P_{i},A_{j} \right]\\</script><p>显然，有对易关系： </p>
+<script type="math/tex; mode=display">
+\left[ P_i,P_j \right]=0\\
+\left[ A_i,A_j \right]=0\\</script><p>接下来考察算符等式 $\left[A_i,P_j \right]$</p>
+<p>任意取一个波函数 $\varphi$，用 $\left[A_i,P_j \right]$ 作用于其上得：</p>
+<script type="math/tex; mode=display">
+\left[A_i,P_j \right] \varphi=A_i(-i \hbar \partial_j \varphi)-(-i \hbar) \partial_j(A_i \varphi)\\
+=-(-i \hbar \partial_j A_i) \varphi</script><p>由于 $\varphi$ 的任意性，可得：</p>
+<script type="math/tex; mode=display">
+\left[ A_i,P_j \right]=i \hbar \partial_j A_i</script><p>同理可知：</p>
+<script type="math/tex; mode=display">
+\left[ P_i,A_j \right]=-i \hbar \partial_i A_j</script><p>所以，有：</p>
+<script type="math/tex; mode=display">
+左边=\frac{i \hbar q}{c}(\partial_i A_j-\partial_j A_i)\\
+=\frac{i \hbar q}{c}\left[ \vec{\nabla} \times \vec{A} \right]_k\\
+=\frac{i \hbar q}{c} \epsilon_{ijk}B_k\\
+=右边</script><p>得证</p>
+<hr>
+<blockquote>
+<ol>
+<li>利用该对易式，类似角动量上升下降算符，可定义产生消灭算符 $a$，$a^{+}$，满足 $\left[ a, a^{+} \right]=1$，对比谐振子哈密顿，写出 z 方向均匀强磁场 $B$ 中移动电子的能级公式</li>
+</ol>
+<script type="math/tex; mode=display">
+E_{k, n}=\frac{\hbar^{2} k^{2}}{2 m}+\hbar \omega(n+1 / 2)</script><p>其中，$\omega =e B/mc$</p>
+</blockquote>
+<p>解：可以写出在 z 方向均匀强磁场 $B$ 中移动电子的哈密顿（算符）为：</p>
+<script type="math/tex; mode=display">
+H=\frac{\Pi^2}{2 m}=\frac{1}{2m}(\Pi_1^2+\Pi_2^2+\Pi_3^2)</script><p>其中 $\Pi_i=P_i-\frac{q}{c}A_i$</p>
+<p>不妨取朗道规范，即 $A_1=-B y,A_2=A_3=0$</p>
+<p>（同讲义的做法一样）经过分离变量 z 后（z 方向为独立运动），得到：</p>
+<script type="math/tex; mode=display">
+E=E_{xy}+E_z=E_{xy}+\frac{\hbar^2 k_z^2}{2 m}</script><p>因此，x-y 方向的哈密顿量为：</p>
+<script type="math/tex; mode=display">
+H_{xy}=\frac{1}{2 m}(\Pi^2_1 +\Pi^2_2)</script><p>其中，由上题得到的对易式可知 </p>
+<script type="math/tex; mode=display">
+\left[ \Pi_1,\Pi_2\right]=\frac{i \hbar e}{c}B</script><p>即</p>
+<script type="math/tex; mode=display">
+\left[\frac{\Pi_1}{\sqrt{2 \hbar m w}}+i\frac{\Pi_2}{\sqrt{2 \hbar m w}} ,\frac{\Pi_1}{\sqrt{2 \hbar m w}}-i\frac{\Pi_2}{\sqrt{2 \hbar m w}} \right]=1</script><p>其中，$w=e B/mc$</p>
+<p>可以定义升降算符 $a,a^{+}$</p>
+<script type="math/tex; mode=display">
+a=\frac{\Pi_1}{\sqrt{2 \hbar m w}}+i\frac{\Pi_2}{\sqrt{2 \hbar m w}}\\
+a^{+}=\frac{\Pi_1}{\sqrt{2 \hbar m w}}-i\frac{\Pi_2}{\sqrt{2 \hbar m w}}</script><p>使得 $\left[a,a^{+}\right]=1$</p>
+<p>如此一来，$H_{xy}$ 即可以写为：</p>
+<script type="math/tex; mode=display">
+H_{xy}=\frac{\hbar w}{2}\left[ a a^{+}+a^{+} a \right]=\hbar w (\frac{1}{2}+a^{+}a)</script><p>对比谐振子能级的代数解法，可知 $H<em>{xy} \varphi(x,y)=E</em>{xy} \varphi(x,y)$</p>
+<script type="math/tex; mode=display">
+E_{xy}=\hbar w(n+\frac{1}{2})</script><p>其中$n=0,1,2,\dots$</p>
+<p>综上所述，</p>
+<script type="math/tex; mode=display">
+E=E_{xy}+E_{z}=\frac{\hbar^2 k^2}{2 m}+\hbar w(n+\frac{1}{2})</script><p>证毕</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 siruishuai@gmail.com </span>
@@ -443,12 +501,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>更新日志</p>
+    <p><span class="copy-title">文章标题:</span>量子力学第二次作业</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="Sirui Shuai">Sirui Shuai</a></p>
     <p><span class="copy-title">发布时间:</span>2020-01-28, 10:32:04</p>
-    <p><span class="copy-title">最后更新:</span>2020-01-29, 09:36:51</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/28/text/" title="更新日志">www.hellosirui.com/2020/01/28/text/</a>
+    <p><span class="copy-title">最后更新:</span>2020-03-06, 10:44:03</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/28/qm_hw2/" title="量子力学第二次作业">www.hellosirui.com/2020/01/28/qm_hw2/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
